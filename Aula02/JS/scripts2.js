@@ -12,5 +12,6 @@ console.log("%s, %s!", greet, who);
 
 console.log({
     'email',
-    'group':{},
+    'groups':{},
+    'id':33,
 })
