@@ -1,11 +1,25 @@
+/*
+Adicionamos um link de arquivo de css no index.html
+*/
 window.document.head.innerHTML = `<link rel="stylesheet" href="css/styles.css" />`;
+/*
+Criar a divCard para exibir as imagens dos produtos ao clicar na foto de miniatura de produto
+*/
 const divCard = document.createElement('div');
+
+//Definir um atributo class para divCard com o nome divCard
 divCard.setAttribute('class', 'divCard');
+/*
+Criar uma imagem para ao clicar nas fotos dos produtos seja mostrado a foto selecionada
+*/
 
 const imgCard = document.createElement('img');
 imgCard.setAttribute('id','imgCard');
 divCard.appendChild(imgCard);
-
+/*
+Foi criado um elemento de html para a tag de link(a) para fechar a divCard Quando o 
+usuario clicar no botão fechar será chamada uma que recolhe a divCard
+*/
 const fechar = document.createElement('a');
 fechar.innerHTML = "fechar";
 fechar.setAttribute('class', "fechar");
